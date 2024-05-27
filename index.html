@@ -1,45 +1,260 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>PSPC2-SERVER-CHILL-AI [Xchillvibe]</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css"> <!-- Add a stylesheet for styling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSPC2-SERVER-CHILL-AI [Xchillvibe]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #ecf0f1;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-links ul li {
+            margin: 0 15px;
+        }
+
+        .nav-links ul li a {
+            color: #17a2b8;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .nav-links ul li a:hover {
+            color: #fff;
+            background-color: #0d6efd;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #ecf0f1;
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .col-md-8 {
+            flex: 1 1 45%;
+            margin: 1rem;
+        }
+
+        .fa-check {
+            color: green;
+            margin-right: 0.5rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        button {
+            background-color: #17a2b8;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 1rem;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0d6efd;
+        }
+
+        #features ul li {
+            margin-bottom: 1rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .status-icon {
+            display: inline-block;
+            animation: pulse 1s infinite;
+            color: green;
+            margin-left: 10px;
+        }
+
+        .glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+        a {
+            color: #1abc9c;
+        }
+
+        a:hover {
+            color: #16a085;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Chill AI FREE [Xchillvibe]</h1>
-        <h2>Chill Ai Website:</h2>
-        <nav>
+        <h1 class="glow">Chill AI FREE [Xchillvibe]</h1>
+        <nav class="nav-links">
             <ul id="links-list">
-                <li><a href="https://f9e0-213-49-126-46.ngrok-free.app" target="_blank">CHILL AI</a></li>
+                <li>
+                    <a href="https://f9e0-213-49-126-46.ngrok-free.app" target="_blank">CHILL AI</a>
+                    <span>(Click here to visit the website)</span>
+                </li>
                 <!-- Add more links as needed -->
             </ul>
         </nav>
     </header>
-    <main class="center-text">
-        <section id="status">
-            <h2>Server Status:</h2>
-            <p><span style="color: green;">All systems operational!</span></p>
-            <ul id="service-status">
-                <li><span style="color: green;"><i class="fas fa-check"></i> Website: Operational </span></li>
-                <li><span style="color: green;"><i class="fas fa-check"></i> Chat with Ai Models: Operational </span></li>
-                <li><span style="color: green;"><i class="fas fa-check"></i> Image Generator: Operational  </span></li>
-            </ul>
-            <h2>Available AI Models:</h2>
-              <li></i> Llama 3: designed to generate human-like text and conversation. With its advanced language understanding and generation capabilities, Meta LLaMA 3 is poised to revolutionize the way we interact with AI. </span></li>
-              <li></i> llama2-uncensored: A more mature and uncensored version of the AI model, designed to generate creative content and respond to user input. Explore the limitless possibilities with LLaMA 2 Uncensored! </span></li>
-              (Image Generator included in all Ai models)
-
-              <h2>Upcoming Features And AI Models:</h2>
-              <li></i> LLaVA: is a multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding, achieving impressive chat capabilities mimicking spirits of the multimodal GPT-4. </span></li>
-              <li></i> wizard-math: Model focused on math and logic problems </span></li>
-              <li></i> mistral: Model focused designed to help students </span></li>
-              <li></i> Russian AI: a Drunk Russian as an assistant. </span></li>
+    <main>
+        <div class="row">
+            <section id="status" class="col-md-8">
+                <h2 class="glow">Server Status:</h2>
+                <p><span style="color: green;">All systems operational!<i class="fas fa-check-circle status-icon"></i></span></p>
+                <ul id="service-status">
+                    <li><i class="fas fa-check"></i> Website: Operational</li>
+                    <li><i class="fas fa-check"></i> Chat with Ai Models: Operational</li>
+                    <li><i class="fas fa-check"></i> Image Generator: Operational</li>
+                </ul>
+                <h3>Hardware Capabilities:</h3>
+                <p>- 2560 CUDA Cores of AI Power</p>
+                <h3>Operating Hours:</h3>
+                <p>From 7:30 AM to 16:30 PM - Monday to Friday</p>
+                <h3>Recent Updates:</h3>
+                <ul id="recent-updates">
+                    <li><i class="fas fa-check"></i> May 20, 2024: Improved server performance and stability.</li>
+                    <li><i class="fas fa-check"></i> May 15, 2024: Added new AI models for enhanced user experience.</li>
+                </ul>
+                <h3>Performance Metrics:</h3>
+                <p>Average response time: 1770ms </p>
+                <p>Image Generating Load time: 39.19 sec</p>
+                <h3>Contact Support:</h3>
+                <p>If you experience any issues, please contact our support team at <a href="mailto:xxchillvibe@gmail.com">xxchillvibe@gmail.com</a>.</p>
+            </section>
+            <section id="features" class="col-md-8">
+                <h2 class="glow">Key Features:</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Free and accessible from anywhere: Enjoy seamless access to our extensive library of AI models, without any geographical restrictions or subscription fees.</li>
+                    <li><i class="fas fa-check"></i> Diverse AI models: Explore a range of AI models, each tailored to specific use cases and industries. From language processing to computer vision and more.</li>
+                    <li><i class="fas fa-check"></i> Human-like interactions: Our AI models simulate human-like conversations, making it easier for users to interact with them.</li>
+                    <li><i class="fas fa-check"></i> Multimodal interactions: Engage users through text, speech, and more. Our AI models recognize and respond to various input modalities.</li>
+                    <li><i class="fas fa-check"></i> Stable Diffusion: Generate images from text prompts using our cutting-edge Stable Diffusion technology. Perfect for creative applications!</li>
+                    <li><i class="fas fa-check"></i> Robust security features: Enjoy encryption and access controls to protect your data and ensure the integrity of our AI-powered systems.</li>
+                </ul>
+            </section>
+        </div>
+        <section id="models" class="container-fluid">
+            <div class="col-md-8">
+                <h2 class="glow">Available AI Models:</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> LLaMA 3: designed to generate human-like text and conversation.</li>
+                    <li><i class="fas fa-check"></i> LLaMA 2 Uncensored: A mature and uncensored version for creative content and user interaction.</li>
+                    <li><i class="fas fa-check"></i> LLaVA: A multimodal model combining a vision encoder and Vicuna for visual and language understanding, mimicking multimodal GPT-4 capabilities.</li>
+                    <li><i class="fas fa-check"></i> Image Generator included in all AI models</li>
+                </ul>
+            </div>
+        </section>        
+        <section id="upcoming" class="container-fluid">
+            <div class="col-md-8">
+                <h2 class="glow">Upcoming Features and AI Models:</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Wizard-Math: Model focused on math and logic problems.</li>
+                    <li><i class="fas fa-check"></i> Mistral: Model designed to help students.</li>
+                    <li><i class="fas fa-check"></i> Russian AI: A Drunk Russian assistant model.</li>
+                    <li><i class="fas fa-check"></i> CodeQwen1.5: is a code generation tool that creates engaging, browser-based puzzles and games using JavaScript, HTML, and CSS.</li>
+                </ul>
+            </div>
         </section>
+        <p>* Chill AI can make mistakes; you are aware of that. Performance can vary based on server loads and Wi-Fi speeds.</p>
     </main>
     <footer>
-        <p>&copy; 2024 Chill AI [Xchillvibe] V1.6 </p>
+        <p>&copy; 2024 Chill AI [Xchillvibe] V1.6</p>
         <p>&copy; 2024 Ollama</p>
-        
     </footer>
 </body>
+
 </html>
