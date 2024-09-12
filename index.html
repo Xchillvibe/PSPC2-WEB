@@ -3,52 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rush to Oudenaarde</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Echoes of Friendship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: url('your-hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 30px;
+        }
+        .cta-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Rush to Oudenaarde</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Echoes of Friendship</h1>
+        <p>An emotionally immersive narrative-driven adventure game.</p>
+        <a href="#download" class="cta-button">Download Now</a>
+        <a href="#about" class="cta-button">Learn More</a>
     </header>
-    
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About the Game</h2>
-            <p>Embark on an exciting journey with "Rush to Oudenaarde." Navigate through levels, collect items, and uncover a touching story of friendship and adventure.</p>
-            <img src="images/about-game.jpg" alt="Game Screenshot">
+
+    <section id="about">
+        <h2>About the Game</h2>
+        <div class="content">
+            <div>
+                <h3>Storyline</h3>
+                <p>*Echoes of Friendship* is an emotionally immersive narrative-driven adventure game set against the backdrop of the Ukrainian refugee crisis in Belgium during 2023-2024. You play as Alexander, a young student who finds himself drawn to a mysterious Ukrainian refugee named Platon amidst the chaos and uncertainty of war and displacement.</p>
+            </div>
+            <img src="game-screenshot.jpg" alt="Game Screenshot">
+        </div>
+        <div class="content">
+            <div>
+                <h3>Gameplay</h3>
+                <p>Navigate through heartfelt chapters, overcoming language barriers, cultural differences, and personal discovery. Forge a meaningful connection with Platon and other new students in your community.</p>
+            </div>
+            <img src="game-play.jpg" alt="Gameplay Image">
         </div>
     </section>
-    
-    <section id="download" class="section">
-        <div class="container">
-            <h2>Download the Game</h2>
-            <p>Get the latest version of "Rush to Oudenaarde" and dive into the adventure today!</p>
-            <a href="path-to-your-game-file" class="button">Download Now</a>
-        </div>
+
+    <section id="download">
+        <h2>Download</h2>
+        <p>Available for PC and Mac.</p>
+        <a href="download-link" class="cta-button">Download Now</a>
+        <p>System requirements: [List Requirements Here]</p>
     </section>
-    
-    <section id="updates" class="section">
-        <div class="container">
-            <h2>Latest Updates</h2>
-            <p>Stay up-to-date with the latest features and improvements. We’re constantly working on enhancing your gaming experience!</p>
-            <a href="path-to-updates" class="button">See All Updates</a>
-        </div>
+
+    <section id="updates">
+        <h2>Latest News</h2>
+        <p>Stay tuned for updates, patch notes, and new content.</p>
     </section>
-    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or feedback, feel free to reach out.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="cta-button">Send</button>
+        </form>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Rush to Oudenaarde. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Echoes of Friendship. All rights reserved.</p>
+        <a href="#about">About</a>
+        <a href="#download">Download</a>
+        <a href="#updates">Updates</a>
+        <a href="#contact">Contact</a>
     </footer>
 </body>
-    <link rel="stylesheet" href="styles.css">
 </html>
