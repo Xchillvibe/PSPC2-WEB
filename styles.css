@@ -7,7 +7,7 @@
 
 /* Body and Font Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -22,13 +22,15 @@ body {
 
 /* Header Styling */
 header {
-    background: #333;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     color: #fff;
     padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     float: left;
+    font-size: 2.5rem;
 }
 
 header nav {
@@ -41,12 +43,18 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
 }
 
 /* Section Styling */
@@ -55,28 +63,39 @@ header nav ul li a {
     background: #fff;
     margin: 1rem 0;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .section p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.section img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 /* Button Styling */
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .button:hover {
     background: #555;
+    transform: scale(1.05);
 }
 
 /* Footer Styling */
@@ -85,4 +104,5 @@ footer {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
